@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Vida | Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <main class="container">
+        <header>
+            <h1>⏳ Tu Tiempo de Vida</h1>
+            <p class="subtitle">Descubre cuánto tiempo has vivido desde tu nacimiento</p>
+        </header>
+
+        <section class="input-section">
+            <label for="birthdate">Selecciona tu fecha de nacimiento:</label>
+            <div class="input-group">
+                <input type="date" id="birthdate" required>
+                <button id="calculateBtn">Calcular</button>
+            </div>
+        </section>
+
+        <section class="results-section" id="results">
+            <div class="result-card" id="yearsCard">
+                <span class="result-value" id="years">0</span>
+                <span class="result-label">Años</span>
+            </div>
+            <div class="result-card" id="monthsCard">
+                <span class="result-value" id="months">0</span>
+                <span class="result-label">Meses</span>
+            </div>
+            <div class="result-card" id="daysCard">
+                <span class="result-value" id="days">0</span>
+                <span class="result-label">Días</span>
+            </div>
+            <div class="result-card" id="hoursCard">
+                <span class="result-value" id="hours">0</span>
+                <span class="result-label">Horas</span>
+            </div>
+            <div class="result-card" id="minutesCard">
+                <span class="result-value" id="minutes">0</span>
+                <span class="result-label">Minutos</span>
+            </div>
+            <div class="result-card" id="secondsCard">
+                <span class="result-value" id="seconds">0</span>
+                <span class="result-label">Segundos</span>
+            </div>
+        </section>
+
+        <section class="total-section" id="totalSection">
+            <h2>Resumen Total</h2>
+            <p id="totalText">Ingresa tu fecha de nacimiento para ver los resultados.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con 💙 | Calculadora de Tiempo de Vida</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
